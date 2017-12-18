@@ -8,6 +8,8 @@
 get '/signup' => 'users#signup' # 회원가입 <form>으로 정보 받아서 /register로 넘겨준다. (email, password)
 get '/register' => 'users#register' # 날아온 정보를 User DB에 저장한다.
 get '/user_list' => 'users#list' # 모든 유저의 정보를 보여준다.
+get '/login' => 'users#login' # 로그인 창에서 로그인 정보를 받아서 /login_process로 넘겨준다.
+get '/login_process' => 'users#login_process' # 로그인 시키는 로직을 통해 로그인을 시킨다.
 ```
 
 ## 2. Home controller
