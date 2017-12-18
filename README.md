@@ -11,6 +11,10 @@ rails generate controller [컨트롤러이름(복수)]
 # 모델 생성
 rails generate model [모델이름(단수)]
 
+# 컨트롤러 / 모델 삭제
+rails destroy controller [컨트롤러이름]
+rails destroy model [모델이름]
+
 # migration을 통해 데이터 테이블 생성
 rake db:migrate
 
